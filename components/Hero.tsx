@@ -102,7 +102,7 @@ export default function Hero() {
           variants={fadeIn}
           className="mx-auto mb-10 max-w-md text-base font-light leading-relaxed text-muted sm:text-lg"
         >
-          Consulenza del Lavoro e Aziendale a Crotone
+          Consulenti del Lavoro a Crotone da oltre 20 anni
         </motion.p>
 
         {/* CTAs */}

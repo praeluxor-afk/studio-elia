@@ -54,7 +54,7 @@ export default function Navbar() {
               <div className="relative h-9 w-9 flex-shrink-0">
                 <Image
                   src="/images/logo.png"
-                  alt="Studio Elia logo"
+                  alt="Studio Elia - Consulenza del Lavoro Crotone"
                   fill
                   className="object-contain"
                   priority

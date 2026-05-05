@@ -88,7 +88,7 @@ export default function Servizi() {
             I Nostri Servizi
           </h2>
           <p className="mt-4 max-w-md text-sm font-light leading-relaxed text-muted">
-            Competenza a 360° per aziende, professionisti e lavoratori.
+            Consulenza del lavoro, aziendale e previdenziale per aziende e professionisti di Crotone e provincia.
           </p>
         </motion.div>
 

@@ -8,6 +8,7 @@ import { FiLinkedin } from 'react-icons/fi'
 const MEMBERS = [
   {
     img: '/images/massimo-elia.jpg',
+    alt: 'Rag. Elia Massimo - Consulente del Lavoro Crotone - Fondatore Studio Elia',
     name: 'Rag. Elia Massimo',
     role: 'Fondatore · Consulente del Lavoro',
     bio: 'Oltre 20 anni di esperienza in consulenza del lavoro, aziendale e societaria. Attivamente impegnato nell\'Ordine Provinciale dei Consulenti del Lavoro di Crotone.',
@@ -15,6 +16,7 @@ const MEMBERS = [
   },
   {
     img: '/images/salvatore-elia.jpg',
+    alt: 'Dott. Elia Salvatore - Consulente del Lavoro Crotone - Studio Elia',
     name: 'Dott. Elia Salvatore',
     role: 'Consulente del Lavoro',
     bio: null,
@@ -22,6 +24,7 @@ const MEMBERS = [
   },
   {
     img: '/images/bruno-pasquale.jpg',
+    alt: 'Dott. Bruno Pasquale - Consulente del Lavoro - Studio Elia Crotone',
     name: 'Dott. Bruno Pasquale',
     role: 'Consulente del Lavoro',
     bio: null,
@@ -29,6 +32,7 @@ const MEMBERS = [
   },
   {
     img: '/images/segretaria.jpg',
+    alt: 'Rag. Elia Maria Serafina - Segreteria Studio Elia Crotone',
     name: 'Rag. Elia Maria Serafina',
     role: 'Segreteria e Amministrazione',
     bio: null,
@@ -80,7 +84,7 @@ export default function Team() {
               <div className="relative aspect-[3/4] w-full overflow-hidden sm:aspect-[3/4]" style={{ aspectRatio: '3/4' }}>
                 <Image
                   src={m.img}
-                  alt={m.name}
+                  alt={m.alt}
                   fill
                   className="object-cover object-top photo-bw"
                   sizes="(max-width: 640px) 50vw, (max-width: 1024px) 25vw, 20vw"

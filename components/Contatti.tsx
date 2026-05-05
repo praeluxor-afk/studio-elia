@@ -110,6 +110,9 @@ export default function Contatti() {
           >
             Siamo qui per te
           </h2>
+          <p className="mt-4 max-w-md text-sm font-light leading-relaxed text-muted">
+            Il nostro studio è a Crotone in Via Largo I° Maggio, 14. Contattaci per una consulenza.
+          </p>
         </motion.div>
 
         <div className="grid gap-16 lg:grid-cols-2 lg:gap-24">
