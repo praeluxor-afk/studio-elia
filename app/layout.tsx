@@ -88,6 +88,10 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://www.studioconsulenzaelia.it',
   },
+  icons: {
+    icon: '/images/logo.png',
+    apple: '/images/logo.png',
+  },
 }
 
 export default function RootLayout({
