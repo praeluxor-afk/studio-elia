@@ -1,5 +1,6 @@
 'use client'
 
+import emailjs from '@emailjs/browser'
 import { useRef, useState, FormEvent, ChangeEvent } from 'react'
 import { motion, useInView } from 'framer-motion'
 import { FiMapPin, FiPhone, FiMail, FiClock, FiFacebook, FiLinkedin } from 'react-icons/fi'
@@ -65,22 +66,18 @@ export default function Contatti() {
     setStatus('loading')
 
     try {
-      const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID
-      const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID
-      const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
-
-      if (serviceId && templateId && publicKey) {
-        const emailjs = await import('@emailjs/browser')
-        await emailjs.send(serviceId, templateId, {
-          nome: form.nome,
-          email: form.email,
-          telefono: form.telefono,
-          tipo: form.tipo,
-          messaggio: form.messaggio,
-        }, publicKey)
-      } else {
-        await new Promise(r => setTimeout(r, 1200))
-      }
+      await emailjs.send(
+        'service_qgvupul',
+        'template_xieatve',
+        {
+          from_name: form.nome,
+          from_email: form.email,
+          phone: form.telefono,
+          message: form.messaggio,
+          reply_to: form.email,
+        },
+        '2CfYwBSRdB0lMStLz',
+      )
       setStatus('success')
       setForm(INITIAL)
     } catch {
@@ -214,7 +211,7 @@ export default function Contatti() {
                   className="font-display text-2xl text-warm"
                   style={{ fontFamily: 'var(--font-cormorant)' }}
                 >
-                  Messaggio inviato!
+                  Messaggio inviato con successo!
                 </p>
                 <p className="text-sm text-muted">Vi risponderemo entro 24 ore.</p>
                 <button
@@ -229,7 +226,7 @@ export default function Contatti() {
 
                 {status === 'error' && (
                   <div className="border border-danger/30 bg-danger/5 px-4 py-3 text-xs text-danger">
-                    Si è verificato un errore. Riprova o contattaci al 0962 906121.
+                    Errore nell&apos;invio, riprova.
                   </div>
                 )}
 
