@@ -110,9 +110,9 @@ export default function Footer() {
           <p className="flex items-center gap-3 text-[0.65rem] font-light text-muted/40">
             <span>© 2025 Studio Elia</span>
             <span>·</span>
-            <Link href="/privacy" className="hover:text-muted transition-colors duration-200">Privacy Policy</Link>
+            <Link href="/privacy-policy" className="hover:text-muted transition-colors duration-200">Privacy Policy</Link>
             <span>·</span>
-            <Link href="/cookie" className="hover:text-muted transition-colors duration-200">Cookie Policy</Link>
+            <Link href="/cookie-policy" className="hover:text-muted transition-colors duration-200">Cookie Policy</Link>
           </p>
         </div>
       </div>
